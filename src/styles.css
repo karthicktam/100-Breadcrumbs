@@ -1,0 +1,66 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+@import url("https://fonts.googleapis.com/css?family=Muli:500,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #81ecec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Muli", sans-serif;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.breadcrumbs li {
+  background-color: #000000;
+  border-radius: 5px 50px 50px 5px;
+  box-shadow: 3px 0 10px #003897;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  position: relative;
+  text-transform: uppercase;
+  padding: 12px 30px;
+}
+
+.breadcrumbs li:nth-of-type(1) {
+  z-index: 100;
+}
+
+.breadcrumbs li:nth-of-type(2) {
+  z-index: 90;
+}
+
+.breadcrumbs li:nth-of-type(3) {
+  z-index: 80;
+}
+
+.breadcrumbs li:nth-of-type(4) {
+  z-index: 70;
+}
+
+.breadcrumbs li:not(:first-of-type) {
+  padding-left: 40px;
+  margin-left: -20px;
+}
+
+.breadcrumbs li:last-of-type {
+  box-shadow: none;
+  background-color: #fff;
+  color: #0984e3;
+}
